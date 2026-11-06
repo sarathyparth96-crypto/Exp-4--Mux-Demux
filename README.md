@@ -15,10 +15,7 @@ Boolean Functions
 <img width="575" height="65" alt="image" src="https://github.com/user-attachments/assets/04c2d90c-0b6b-4b35-b603-d0e10e1e4f00" />
 
 ## Design / RTL Program
-
- 
-
- 
+// gedit mux_demux.v
 module mux2to1 (
     input  wire A,      // input line 0
     input  wire B,      // input line 1
@@ -39,9 +36,8 @@ module demux1to2 (
 endmodule
 
 
-```
 ## **Testbench Program
-
+// gedit tb4.v
 module tb4;
     reg  A, B, S, D;
     wire Y;
@@ -87,6 +83,7 @@ module tb4;
         #10 $finish;
     end
 endmodule
+
 
 
 ## Truth Table
@@ -150,34 +147,14 @@ The 2:1 Multiplexer and 1:2 Demultiplexer were realized using Verilog HDL:
 •	Y0 = S'.D, Y1 = S.D
 
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected truth table.
+<img width="1920" height="586" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/b79618ea-843a-42cc-b944-934eaa0475cf" />
 
 ## Output
-<img width="1823" height="912" alt="Screenshot 2026-10-22 183907" src="https://github.com/user-attachments/assets/2bcc49cb-9021-43d7-b393-dc3971418e05" />
 
+<img width="1920" height="1036" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/79a8428c-0b33-4ecd-b248-1385cc4045e6" />
+<img width="1920" height="1019" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/ad7784c4-a24e-4829-bec0-3b6ebe33a8e0" />
 
-
-## Viva-Voce Questions
-
-•	What is a Multiplexer, and why is it called a 'data selector'?
-
-•	What is a Demultiplexer, and how does it differ functionally from a Multiplexer?
-
-•	How many select lines are required for an 8:1 MUX and a 1:8 DEMUX?
-
-•	Write the Boolean expression for a 4:1 Multiplexer.
-
-•	What is the purpose of a Verilog testbench?
-
-•	Why is a VCD file generated, and what does $dumpvars(0, tb) do?
-
-•	What is the purpose of ./simv?
-
-•	What is the difference between simulation and synthesis?
-
-•	How would you extend the 2:1 MUX design to a 4:1 MUX using two 2:1 MUXes?
 
 ## Result
 
 Thus, the 2:1 Multiplexer and 1:2 Demultiplexer were designed, implemented using Verilog HDL, successfully simulated using Synopsys VCS, and verified using Synopsys DVE.
-
-
